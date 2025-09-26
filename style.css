@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: white;
+  padding: 15px 20px 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0 10px -1px black;
+}
+
+nav {
+  max-width: 1470px;
+  margin: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .logo p {
+  color: black;
+  align-items: center;
+  letter-spacing: 0.2em;
+  font-size: 1em;
+}
+
+nav .logo span {
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav .menu-list {
+  display: flex;
+  gap: 2em;
+  padding: 0;
+}
+
+nav .menu-list a {
+  color: black;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+}
+
+.hero {
+  /* height: 100vh; */
+  position: relative;
+}
+
+.hero .wrapper {
+  position: relative;
+}
+
+.hero .wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hero .wrapper p {
+  min-width: 0;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero .wrapper p .you {
+  background-color: rgba(0, 0, 0, 0.76);
+  color: white;
+  padding: 10px 15px 10px 15px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.hero .wrapper p {
+  color: white;
+  letter-spacing: 0.2em;
+}
+
+@media (max-width: 665px) {
+  nav .menu-list {
+    display: none;
+  }
+
+  .hero .wrapper p .arch {
+    display: none;
+  }
+
+  .hero .wrapper p {
+    margin-top: 20px;
+  }
+}
+
+.house {
+  padding-top: 100px;
+  max-width: 1450px;
+  margin: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  /* padding: 190px 20px 0px 20px; */
+  /* padding-top: 190px; */
+}
+
+.house .wrapper {
+  border-top: thin solid #66666636;
+  max-width: 1450px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  /* padding-top: 50px; */
+  padding: 50px 10px 0px 10px;
+}
+
+.house .wrapper div {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.house .heading h1 {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+.house .wrapper div img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 993px) {
+  .house .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .house .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
