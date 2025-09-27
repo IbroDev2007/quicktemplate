@@ -127,7 +127,7 @@ nav .menu-list a {
   grid-template-columns: repeat(4, 1fr);
   gap: 1em;
   /* padding-top: 50px; */
-  padding: 50px 10px 0px 10px;
+  padding: 50px 0px 0px 0px;
 }
 
 .house .wrapper div {
@@ -163,6 +163,90 @@ nav .menu-list a {
 
 @media (max-width: 600px) {
   .house .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about {
+  padding: 70px 10px 40px 10px;
+}
+
+.about .head {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.about .head h1 {
+  font-size: 1.3em;
+  padding-bottom: 25px;
+}
+
+.about .head p {
+  border-top: thin solid #66666636;
+  padding-top: 20px;
+  font-size: 1em;
+}
+
+.about .wrapper {
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  margin-top: 50px;
+}
+
+.about .wrapper .elder {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.about .wrapper .elder img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.about .wrapper .elder .details {
+  padding-top: 20px;
+}
+
+.about .wrapper .elder .cover {
+  position: relative;
+}
+
+.about .wrapper .elder .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  mix-blend-mode: saturation;
+}
+
+.about .wrapper .elder .details h1 {
+  font-size: 1.5em;
+}
+
+.about .wrapper .elder .details p:nth-child(2) {
+  font-size: 0.9em;
+  color: #696969;
+}
+
+.about .wrapper .elder .details button {
+  width: 100%;
+  border: none;
+  padding: 10px 0px 10px 0px;
+}
+
+@media (max-width: 993px) {
+  .about .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about .wrapper {
     grid-template-columns: 1fr;
   }
 }
