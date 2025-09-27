@@ -297,6 +297,8 @@ nav .menu-list a {
   max-width: 1400px;
   margin: auto;
   overflow: hidden;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .map img {
@@ -312,7 +314,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
-  padding: 25px 10px 15px 10px;
+  padding: 25px 0px 15px 0px;
   margin-top: 10px;
   font-size: 1em;
 }
