@@ -9,7 +9,7 @@
 
 header {
   background-color: white;
-  padding: 15px 20px 15px 20px;
+  padding: 13px 20px 0 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -112,13 +112,11 @@ nav .menu-list a {
 }
 
 .house {
-  padding-top: 100px;
+  padding-top: 50px;
   max-width: 1450px;
   margin: auto;
   padding-right: 10px;
   padding-left: 10px;
-  /* padding: 190px 20px 0px 20px; */
-  /* padding-top: 190px; */
 }
 
 .house .wrapper {
@@ -135,6 +133,7 @@ nav .menu-list a {
 .house .wrapper div {
   min-width: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .house .heading h1 {
@@ -146,6 +145,14 @@ nav .menu-list a {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+.house .wrapper div span {
+  position: absolute;
+  /* z-index: 1000; */
+  background-color: black;
+  color: white;
+  padding: 10px;
 }
 
 @media (max-width: 993px) {
