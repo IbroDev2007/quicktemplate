@@ -292,3 +292,31 @@ nav .menu-list a {
   border: none;
   padding: 5px 15px 5px 15px;
 }
+
+.map {
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.map img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 25px 0px 15px 0px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+footer span {
+  text-decoration: underline !important;
+}
