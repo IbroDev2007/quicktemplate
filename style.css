@@ -250,3 +250,43 @@ nav .menu-list a {
     grid-template-columns: 1fr;
   }
 }
+
+.contact {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contact .wrapper {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .head h1 {
+  font-size: 1.3em;
+  padding-bottom: 25px;
+}
+
+.contact .head {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.contact .wrapper input {
+  padding: 8px 0px 8px 5px;
+  border: thin solid #6666665f;
+}
+
+.contact .submit {
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.contact .submit button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 15px 5px 15px;
+}
